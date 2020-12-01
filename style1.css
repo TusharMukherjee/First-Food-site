@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* logo and img */
+#logo{
+    margin: 15px 15px;
+    z-index: 1;
+    
+}
+
+#logo img{
+    /* position: relative;
+    z-index: 2; */
+    height: 50px;
+    border-radius: 50%;
+    /* margin: 3px 6px; */
+}
+
+:root{
+    --navbar-height: 59px;
+}
+/*navigation bar*/
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+
+}
+/* logo and img
+#logo{
+    margin: 15px 15px;
+    
+}
+
+#logo img{
+    /* position: relative;
+    z-index: 2; */
+   /* height: 50px;
+    border-radius: 50%;
+    /* margin: 3px 6px; */
+/*}   */
+
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem; 
+}
+
+#navbar ul li a{
+    position: relative;
+    color: white;
+    display: block;
+    margin: 18px 15px;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 1;
+    text-decoration: none; 
+}
+
+#navbar ul li a:hover{
+    position: relative;
+    z-index: 1;
+    color: black;
+    background-color: white;
+    
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    padding: 5px 200px;
+    justify-content: center; 
+    align-items: center;
+}
+
+    #home::before{
+    content: "";
+    position: absolute;
+    background: url('cinnamon-22.jpg'); /*no-repeat center center/cover;*/
+    /* background-position: center; */
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.80;
+
+    /* opacity: 0.89; */
+}   
+
+#home h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    z-index: -1;
+}
+
+#home p{
+    position: relative;
+    z-index: -1;
+    color: #2A2B2DFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+/* Service Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    /* border: 2px solid brown; */
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 5px;
+    background-color:#e5e6e6;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+/* clients section  */
+#client-section{
+    /* height: 361px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bakery-1868396_1920.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 150px;
+}
+.client-item{
+    padding: 34px;
+    z-index: -3;
+}
+
+/* img heights */
+/* #clients  #messi img{
+    height: 100px;
+}
+#clients  #bbf img{
+    height: 100px;
+}
+#clients  #kaint img{
+    height: 100px;
+}
+#clients  #blap img{
+    height: 100px;
+} */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /* opacity: 0.7; */
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility class */
+.h-primary{
+    position: relative;
+    z-index: -1;
+    font-size: 4rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 0px;
+    /* border-color: white; */
+    /* border: 2px solid rgb(255, 230, 0); */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
